@@ -1,141 +1,245 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonte (opcional, mas recomendado) -->
+    <link rel="preconnect" href="https://rsms.me" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Tailwind compilado (gerado pelo CLI) -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
     <title>Curriculum Vitae</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: "Fira Code", monospace;
-            text-align: center;
-            margin: 0;
-            padding: 40px;
-        }
-        h1, h2 {
-            color: #82b1ff;
-        }
-        a {
-            color: #82b1ff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: left;
-        }
-        @media (prefers-color-scheme: dark) {
-        body {
-          background-color: #121212;
-          color: #e0e0e0;
-        }
-        .section-title {
-          color: #82b1ff;
-        }
-        .experience-period {
-          color: #b0bec5;
-        }
-        .contact-info i {
-          color: #e0e0e0;   
-        }
-        a {
-          color: #82b1ff;
-        }
-        .highlight-text {
-          color: #ffffff;
-        }
-        .text-center {
-            text-align: center;
-        }
-      }
-    </style>
 </head>
-<body>
-    <div class="content">
-        <h1 class="text-center">Joabe Levi Silva</h1>
-        <h2 class="text-center">Desenvolvedor Full Stack | Django | Python | JS</h2>
-        
-        <h2>Contato</h2>
-        <p class="contact-info">
-            <i class="fas fa-envelope"></i> <a href="mailto:joabelevi@gmail.com">joabelevi@gmail.com</a>
-            <br>
-            <i class="fab fa-github"></i> <a href="https://github.com/joabe-levi" target="_blank">github.com/joabe-levi</a>
-            <br>
-            <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/joabe-levi-6ab04215a/" target="_blank">linkedin.com/joabe-levi</a>
-            <br>
-            <i class="fas fa-map-marker-alt"></i> Fortaleza, Ceará, Brasil
-            <br>
-            <i class="fas fa-phone"></i> (85) 99639-8151
-            
-        </p>
 
-        <div class="mt-4">
-            <h2>Resumo do Perfil</h3>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;Tenho 5 anos de experiência com Python e Django, atuando principalmente no desenvolvimento de soluções para órgãos públicos. Ao longo da minha carreira, fui responsável por levantar requisitos, modelar dados e implementar módulos complexos, como os de contratos e registro de preços, com foco na precisão dos cálculos.
-                Tenho também experiência com Django Rest Framework, geração de relatórios em PDF e criação de filtros personalizados. Sou apaixonado por aprender e sempre busco melhorar meus conhecimentos e processos.
-                Estou em constante evolução técnica e, no futuro, quero expandir minhas habilidades, incluindo o desenvolvimento mobile, para crescer ainda mais na minha carreira.
+<body class="min-h-screen bg-slate-950 text-slate-100">
+    <div class="mx-auto max-w-3xl px-4 py-10">
+        <div
+            class="rounded-2xl border border-white/10 bg-slate-900/30 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur sm:p-10">
+
+            <h1 class="text-center text-2xl font-semibold tracking-tight sm:text-4xl">Joabe Levi Silva</h1>
+            <h2 class="mt-2 text-center text-sm font-medium text-brand-200 sm:text-lg">
+                Desenvolvedor Back-end | Django | Python | SQL
+            </h2>
+
+            <hr class="my-8 border-white/10" />
+
+            <h2 class="text-xl font-semibold text-brand-200">Contato</h2>
+            <p class="mt-4 space-y-2 text-sm text-slate-300">
+                <span class="block">
+                    <i class="fas fa-envelope text-brand-200 mr-2"></i>
+                    <a class="text-brand-200 hover:underline" href="mailto:joabelevi@gmail.com">joabelevi@gmail.com</a>
+                </span>
+
+                <span class="block">
+                    <i class="fab fa-github text-brand-200 mr-2"></i>
+                    <a class="text-brand-200 hover:underline" href="https://github.com/joabe-levi" target="_blank"
+                        rel="noopener">github.com/joabe-levi</a>
+                </span>
+
+                <span class="block">
+                    <i class="fab fa-linkedin text-brand-200 mr-2"></i>
+                    <a class="text-brand-200 hover:underline" href="https://www.linkedin.com/in/joabe-levi-6ab04215a/"
+                        target="_blank" rel="noopener">linkedin.com/in/joabe-levi</a>
+                </span>
+
+                <span class="block">
+                    <i class="fas fa-map-marker-alt text-brand-200 mr-2"></i>
+                    Fortaleza, Ceará, Brasil
+                </span>
             </p>
+
+            <div class="mt-8">
+                <h2 class="text-xl font-semibold text-brand-200">Resumo do Perfil</h2>
+                <p class="mt-4 text-sm leading-relaxed text-slate-300">
+                    Desenvolvedor Back-end com mais de 5 anos de experiência em Python e Django, especializado em
+                    soluções críticas para o setor público. Minha atuação foca em consistência, rastreabilidade e
+                    tradução de regras de negócio complexas em software seguro.
+                </p>
+                <p class="mt-4 text-sm leading-relaxed text-slate-300">
+                    Tenho sólida vivência em todo o ciclo de desenvolvimento, desde a modelagem de dados e otimização de
+                    SQL até a criação de APIs com Django REST Framework e sistemas de geração massiva de relatórios.
+                </p>
+                <p class="mt-4 text-sm leading-relaxed text-slate-300">
+                    Graduado em Análise e Desenvolvimento de Sistemas (Estácio) e atualmente pós-graduando em Engenharia
+                    de Dados pela Unifor (previsão 11/2026), estou expandindo minha expertise técnica para arquiteturas
+                    escaláveis e processamento de dados, apoiado por inglês técnico.
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <h2 class="text-xl font-semibold text-brand-200">Hard-skills</h2>
+                <ul class="mt-4 grid grid-cols-2 gap-2 text-sm text-slate-300 sm:grid-cols-3">
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Python</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Django</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">SQL</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Git</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">JavaScript</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">jQuery</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">HTML</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">DRF</li>
+                </ul>
+            </div>
+
+            <div class="mt-10">
+                <h2 class="text-xl font-semibold text-brand-200">Soft-skills</h2>
+                <ul class="mt-4 grid grid-cols-2 gap-2 text-sm text-slate-300 sm:grid-cols-3">
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Lifelong learning</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Vontade de aprender</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Espírito de colaboração</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Proatividade</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Autonomia</li>
+                    <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Comunicação</li>
+                </ul>
+            </div>
+
+            <div class="mt-10">
+                <h2 class="text-xl font-semibold text-brand-200">Experiência Profissional</h2>
+
+                <div class="mt-4 rounded-2xl border border-white/10 bg-slate-950/30 p-5">
+                    <small class="block text-xs text-slate-400">
+                        <i class="fas fa-calendar-alt mr-2"></i>07/2019 - 10/2025
+                    </small>
+                    <p class="mt-2 text-sm font-semibold text-slate-100">Desenvolvedor Full Stack — M2A Tecnologia</p>
+                    <p class="mt-2 text-sm text-slate-300">
+                        Atuando fortemente na criação de novas implementações, como o módulo de adesão de registro de
+                        preço, além de
+                        módulos com regras complexas e foco em precisão de cálculos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-6 rounded-2xl border border-white/10 bg-slate-950/30 p-5">
+                <small class="block text-xs text-slate-400">
+                    <i class="fas fa-calendar-alt mr-2"></i>Projeto independente
+                </small>
+
+                <p class="mt-2 text-sm font-semibold text-slate-100">
+                    Projeto SANAR — Sistema de Serviços Públicos
+                </p>
+
+                <p class="mt-2 text-sm text-slate-300">
+                    Desenvolvimento de um sistema back-end para gerenciamento de usuários e solicitações
+                    de serviços públicos, com foco em segurança, rastreabilidade das demandas e comunicação
+                    ágil por meio de notificações. A solução foi projetada para facilitar o acompanhamento e
+                    a gestão das solicitações, permitindo integração com outras ferramentas e evolução futura
+                    do sistema.
+                </p>
+
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span
+                        class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Python</span>
+                    <span
+                        class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Django</span>
+                    <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Django
+                        REST Framework</span>
+                    <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">REST
+                        API</span>
+                    <span
+                        class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Notificações</span>
+                    <span
+                        class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Segurança</span>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <h2 class="text-xl font-semibold text-brand-200">Educação</h2>
+
+                <div class="mt-4 space-y-4">
+                    <!-- Graduação -->
+                    <div class="rounded-2xl border border-white/10 bg-slate-950/30 p-5">
+                        <small class="block text-xs text-slate-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>12/2018 - 06/2024
+                        </small>
+
+                        <p class="mt-2 text-sm font-semibold text-slate-100">
+                            Análise e Desenvolvimento de Sistemas
+                        </p>
+
+                        <p class="mt-1 text-xs text-slate-400">
+                            Estácio FIC
+                        </p>
+                    </div>
+
+                    <!-- Pós-graduação -->
+                    <div class="rounded-2xl border border-white/10 bg-slate-950/30 p-5">
+                        <small class="block text-xs text-slate-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>05/2025 - 11/2026 (previsão)
+                        </small>
+
+                        <p class="mt-2 text-sm font-semibold text-slate-100">
+                            Pós-graduação — Engenharia de Dados
+                        </p>
+
+                        <p class="mt-1 text-xs text-slate-400">
+                            Universidade de Fortaleza (UNIFOR)
+                        </p>
+                    </div>
+
+                    <!-- Inglês -->
+                    <div class="rounded-2xl border border-white/10 bg-slate-950/30 p-5">
+                        <small class="block text-xs text-slate-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>07/2024 - atualmente
+                        </small>
+
+                        <p class="mt-2 text-sm font-semibold text-slate-100">
+                            Inglês — 4º semestre
+                        </p>
+
+                        <p class="mt-1 text-xs text-slate-400">
+                            Universidade Estadual do Ceará (UECE)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <h2 class="text-xl font-semibold text-brand-200">Certificações</h2>
+                <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300">
+                    <li>Criando poderosas APIs RESTful com Django Rest Framework — Udemy</li>
+                    <li>Django 4 Avançado (100+ aulas) — Udemy</li>
+                </ul>
+            </div>
+
+            <div class="mt-10">
+                <h2 class="text-xl font-semibold text-brand-200">Idiomas</h2>
+                <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300">
+                    <li>Inglês — Intermediário</li>
+                </ul>
+            </div>
+
         </div>
-        
-        <h2>Hard-skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Django</li>
-            <li>SQL</li>
-            <li>Git</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>HTML</li>
-            <li>DRF</li>
-        </ul>
 
-        <h2>Soft-skills</h2>
-        <ul>
-            
-            <li>Lifelong learning</li>
-            <li>Vontade de aprender</li>
-            <li>Espírito de colaboração</li>
-            <li>Proatividade</li>
-            <li>Autonomia</li>
-            <li>Comunicação</li>
-        </ul>
-        
-        <h2>Experiência Profissional</h2>
-
-        <small class="experience-period">
-            <i class="fas fa-calendar-alt"></i> 07/2019 - atualmente.
-        </small>
-        <p> - Desenvolvedor Full Stack - M2A Tecnologia</p>
-        <p>Atuando fortemente na criação de novas implementações, como o módulo de adesão de registro de preço.</p>
-        
-        <h2>Educação</h2>
-        <small class="experience-period">
-            <i class="fas fa-calendar-alt"></i> 12/2018 - 06/2024
-        </small>
-        <p> - Análise e Desenvolvimento de Sistemas</p>
-
-        <small class="experience-period">
-            <i class="fas fa-calendar-alt"></i> 07/2024 - atualmente, segundo semestre.
-        </small>
-        <p> - Inglês</p>
-        
-        <h2>Certificações</h2>
-        <ul>
-            <li>Criando poderosas APIs RESTful com Django Rest Framework - Udemy</li>
-            <li>Django 4 Avançado 100+ aulas - Udemy</li>
-        </ul>
-        
-        <h2>Idiomas</h2>
-        <ul>
-            <li>Inglês - Intermediário</li>
-        </ul>
+        <p class="mt-6 text-center text-xs text-slate-500">
+            © <span id="year"></span> Joabe Levi
+        </p>
     </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <style>
+        /* só para manter o "brand-200" caso você goste do tom antigo */
+        .text-brand-200 {
+            color: #82b1ff;
+        }
+
+        .bg-brand-200\/10 {
+            background-color: rgba(130, 177, 255, .10);
+        }
+
+        .border-brand-200\/20 {
+            border-color: rgba(130, 177, 255, .20);
+        }
+    </style>
 </body>
+
 </html>
